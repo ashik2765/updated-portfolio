@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Text */}
-                <p className="text-sm text-gray-500">&copy; 2024 Your Name. All rights reserved.</p>
+                <p className="text-sm text-gray-500">&copy; 2024 Ashikur Rahman. All rights reserved.</p>
             </div>
         </footer>
     );

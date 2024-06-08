@@ -7,11 +7,11 @@ const NavBar = () => {
 
 
     return (
-        <nav className="bg-gray-900 p-4">
+        <nav className="bg-gray-900 p-4 fixed max-w-7xl mx-auto w-full z-10 top-0">
             <div className="container mx-auto flex items-center justify-between">
                 {/* Brand Logo */}
                 <div className="flex items-center">
-                    <span className="text-white text-2xl font-semibold">YourName</span>
+                    <span className="text-white text-2xl font-semibold">Ashikur Rahman</span>
                 </div>
 
                 {/* Mobile Menu Button */}

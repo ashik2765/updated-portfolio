@@ -1,10 +1,13 @@
 
 
 const Resume = () => {
+    const handleDownload = () => {
+        window.location.href = '/resume.pdf';
+    };
     return (
-        <div>
-            <h1>This is Resume.</h1>
-        </div>
+        <button onClick={handleDownload}>
+            Download Resume
+        </button>
     );
 };
 

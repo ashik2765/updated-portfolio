@@ -1,3 +1,4 @@
+import ProjectCard from "./ProjectCard";
 
 
 const Portfolio = () => {
@@ -54,31 +55,10 @@ const Portfolio = () => {
 
                 {/* Project Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project, index) => (
-                        <div key={index} className="bg-gray-100 p-6 rounded-lg">
-                            <img
-                                src={project.image}  // Replace with the path to your project image
-                                alt={project.title}
-                                className="w-full h-40 object-cover mb-4 rounded-md"
-                            />
-                            <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                            <p className="text-gray-600 mb-4">{project.description}</p>
-                            <div className="flex justify-center space-x-4">
-                                <a
-                                    href={project.demoLink}
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300"
-                                >
-                                    Demo
-                                </a>
-                                <a
-                                    href={project.codeLink}
-                                    className="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-900 transition duration-300"
-                                >
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                    ))}
+                    {projects.map((project, index) => <ProjectCard
+                        key={index}
+                        project={project}
+                    ></ProjectCard>)}
                 </div>
             </div>
         </section>

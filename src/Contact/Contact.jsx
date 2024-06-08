@@ -1,4 +1,4 @@
-
+import { FaGithub, FaInstagram, FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 
 const Contact = () => {
     return (
@@ -56,13 +56,16 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold mb-4">Connect with me on social media</h3>
                     <div className="flex justify-center space-x-4">
                         <a href="#" className="text-white hover:text-gray-300 transition duration-300">
-                            <i className="fab fa-twitter fa-2x"></i>
+                            <FaTelegramPlane className="size-10" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ashikur-rahman98/" className="text-white hover:text-gray-300 transition duration-300">
+                            <FaLinkedin className="size-10" />
+                        </a>
+                        <a href="https://github.com/ashik2765" className="text-white hover:text-gray-300 transition duration-300">
+                            <FaGithub className="size-10" />
                         </a>
                         <a href="#" className="text-white hover:text-gray-300 transition duration-300">
-                            <i className="fab fa-linkedin-in fa-2x"></i>
-                        </a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300">
-                            <i className="fab fa-github fa-2x"></i>
+                            <FaInstagram className="size-10" />
                         </a>
                         {/* Add more social media links as needed */}
                     </div>

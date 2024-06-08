@@ -1,4 +1,6 @@
+import Resume from "../Resume/Resume";
 import NavBar from "./NavBar";
+import photo from "../../public/me.jpg"
 
 
 const Home = () => {
@@ -11,7 +13,7 @@ const Home = () => {
                     {/* Photo Section */}
                     <div className="mb-8">
                         <img
-                            src="your-profile-photo.jpg"  // Replace with the path to your photo
+                            src={photo} // Replace with the path to your photo
                             alt="Your Name"
                             className="rounded-full h-24 w-24 object-cover border-4 border-blue-500"
                         />
@@ -20,7 +22,7 @@ const Home = () => {
                     {/* About Section */}
                     <div className="text-center">
                         <h1 className="text-4xl font-bold mb-4">Hello, I am Ashikur Rahman</h1>
-                        <p className="text-lg mb-8">A passionate web developer creating modern and responsive websites.</p>
+                        <p className="text-lg mb-8">A passionate MERN stack developer creating modern and responsive websites.</p>
 
                         {/* Call to Action */}
                         <div className="flex justify-center">
@@ -28,7 +30,7 @@ const Home = () => {
                                 href="#portfolio"
                                 className="bg-blue-500 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-600 transition duration-300"
                             >
-                                View My Work
+                                <Resume></Resume>
                             </a>
                         </div>
                     </div>
