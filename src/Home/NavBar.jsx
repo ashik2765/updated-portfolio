@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
@@ -9,12 +10,12 @@ const NavBar = () => {
     return (
         <nav className="bg-gray-900 p-4 fixed max-w-7xl mx-auto w-full z-10 top-0">
             <div className="container mx-auto flex items-center justify-between">
-                {/* Brand Logo */}
+                
                 <div className="flex items-center">
                     <span className="text-white text-2xl font-semibold">Ashikur Rahman</span>
                 </div>
 
-                {/* Mobile Menu Button */}
+               
                 <div className="lg:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -42,22 +43,24 @@ const NavBar = () => {
                     </button>
                 </div>
 
-                {/* Desktop Menu */}
+                
                 <div className="hidden lg:flex space-x-4">
-                    <a href="#home" className="text-white hover:text-gray-300 transition duration-300">Home</a>
+                    <Link to="/" className="text-white hover:text-gray-300 transition duration-300">Home</Link>
                     <a href="#portfolio" className="text-white hover:text-gray-300 transition duration-300">Portfolio</a>
                     <a href="#about" className="text-white hover:text-gray-300 transition duration-300">About</a>
                     <a href="#contact" className="text-white hover:text-gray-300 transition duration-300">Contact</a>
+                    <Link to="/blogs" className="text-white hover:text-gray-300 transition duration-300">Blogs</Link>
                 </div>
             </div>
 
-            {/* Mobile Menu (hidden by default) */}
+           
             {isOpen && (
                 <div className="lg:hidden mt-2">
-                    <a href="#home" className="block py-2 text-white hover:bg-gray-800 transition duration-300">Home</a>
+                    <Link to="/" className="block py-2 text-white hover:bg-gray-800 transition duration-300">Home</Link>
                     <a href="#portfolio" className="block py-2 text-white hover:bg-gray-800 transition duration-300">Portfolio</a>
                     <a href="#about" className="block py-2 text-white hover:bg-gray-800 transition duration-300">About</a>
                     <a href="#contact" className="block py-2 text-white hover:bg-gray-800 transition duration-300">Contact</a>
+                    <Link to="/blogs" className="block py-2 text-white hover:bg-gray-800 transition duration-300">Blogs</Link>
                 </div>
             )}
         </nav>

@@ -5,47 +5,46 @@ const Portfolio = () => {
 
     const projects = [
         {
-            title: 'E-commerce Platform',
+            title: 'Summer Camp school',
             description: 'Built a responsive e-commerce platform using React and Node.js.',
-            image: 'project1.jpg',  // Replace with the path to your project image
-            demoLink: '#',  // Add your project's demo link
-            codeLink: '#',  // Add your project's code repository link
+            image: 'https://i.ibb.co/tPCxXMs/photography.png',
+            demoLink: 'https://summer-camp-cc8a0.web.app/',
+            codeLink: 'https://github.com/ashik2765/photography-school-client',
         },
         {
-            title: 'Personal Blog',
-            description: 'Developed a personal blog with a custom CMS using Next.js and MongoDB.',
-            image: 'project2.jpg',  // Replace with the path to your project image
-            demoLink: '#',  // Add your project's demo link
-            codeLink: '#',  // Add your project's code repository link
-        },
-        {
-            title: 'E-commerce Platform',
-            description: 'Built a responsive e-commerce platform using React and Node.js.',
-            image: 'project1.jpg',  // Replace with the path to your project image
-            demoLink: '#',  // Add your project's demo link
-            codeLink: '#',  // Add your project's code repository link
+            title: 'Seasonal fruits',
+            description: 'Developed a E-commerce Platform with a custom CMS using Next.js and MongoDB.',
+            image: 'https://i.ibb.co/hs0cssd/Mango-Village-1.png',
+            demoLink: 'https://mongo-village.web.app/',
+            codeLink: 'https://github.com/ashik2765/mango-village',
         },
         {
             title: 'E-commerce Platform',
             description: 'Built a responsive e-commerce platform using React and Node.js.',
-            image: 'project1.jpg',  // Replace with the path to your project image
-            demoLink: '#',  // Add your project's demo link
-            codeLink: '#',  // Add your project's code repository link
+            image: 'https://i.ibb.co/g90CLZX/Hero-Gadget.png',
+            demoLink: 'https://herogadget.netlify.app/shop',
+            codeLink: 'https://github.com/ashik2765/gadgetHous',
         },
         {
             title: 'E-commerce Platform',
             description: 'Built a responsive e-commerce platform using React and Node.js.',
-            image: 'project1.jpg',  // Replace with the path to your project image
-            demoLink: '#',  // Add your project's demo link
-            codeLink: '#',  // Add your project's code repository link
+            image: 'https://i.ibb.co/GPYRz1D/Ema-john.png',
+            demoLink: 'https://ema-john-3d90f.web.app/',
+            codeLink: 'https://github.com/ashik2765/ema-john',
+        },
+        {
+            title: 'Resturant website',
+            description: 'Built a responsive e-commerce platform using React and Node.js.',
+            image: 'https://i.ibb.co/ygqhCvq/cooking.png',
+            demoLink: 'https://resplendent-sunshine-7655c6.netlify.app/chef',
+            codeLink: 'https://github.com/ashik2765/chef-recipe-hunter-client',
         }, {
-            title: 'E-commerce Platform',
+            title: 'Toys',
             description: 'Built a responsive e-commerce platform using React and Node.js.',
-            image: 'project1.jpg',  // Replace with the path to your project image
-            demoLink: '#',  // Add your project's demo link
-            codeLink: '#',  // Add your project's code repository link
+            image: 'https://i.ibb.co/pb8M2ND/toys.png',
+            demoLink: 'https://toy-shop-client-feb00.web.app/',
+            codeLink: 'https://github.com/ashik2765/toy-market-client',
         },
-        // Add more projects as needed
     ];
 
     return (

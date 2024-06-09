@@ -1,30 +1,25 @@
+import AboutMe from "../AboutMe/AboutMe";
+import Contact from "../Contact/Contact";
+import Portfolio from "../Portfolio/Portfolio";
 import Resume from "../Resume/Resume";
-import NavBar from "./NavBar";
-import photo from "../../public/me.jpg"
+import myphoto from "../assets/me.jpg"
 
 
 const Home = () => {
     return (
         <div>
-            <NavBar></NavBar>
             <section id="home" className="bg-gray-900 text-white py-20">
                 <div className="container mx-auto flex flex-col items-center">
-
-                    {/* Photo Section */}
                     <div className="mb-8">
                         <img
-                            src={photo} // Replace with the path to your photo
+                            src={myphoto}
                             alt="Your Name"
                             className="rounded-full h-24 w-24 object-cover border-4 border-blue-500"
                         />
                     </div>
-
-                    {/* About Section */}
                     <div className="text-center">
                         <h1 className="text-4xl font-bold mb-4">Hello, I am Ashikur Rahman</h1>
                         <p className="text-lg mb-8">A passionate MERN stack developer creating modern and responsive websites.</p>
-
-                        {/* Call to Action */}
                         <div className="flex justify-center">
                             <a
                                 href="#portfolio"
@@ -34,10 +29,11 @@ const Home = () => {
                             </a>
                         </div>
                     </div>
-
                 </div>
             </section>
-
+            <AboutMe></AboutMe>
+            <Portfolio></Portfolio>
+            <Contact></Contact>
         </div>
     );
 };

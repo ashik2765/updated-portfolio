@@ -6,7 +6,7 @@ const AboutMe = () => {
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-8 text-gray-800">About Me</h2>
 
-                {/* Introduction */}
+                
                 <div className="max-w-2xl mx-auto mb-10">
                     <p className="text-gray-700 leading-loose">
                         Hi there! i am Ashikur Rahman, a passionate web developer with a keen interest in creating innovative and user-friendly websites.
@@ -14,7 +14,7 @@ const AboutMe = () => {
                     </p>
                 </div>
 
-                {/* Skills */}
+                
                 <div className="mb-12">
                     <h3 className="text-2xl font-bold mb-4 text-gray-800">Skills</h3>
                     <div className="flex flex-wrap justify-center">
@@ -24,6 +24,8 @@ const AboutMe = () => {
                         <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">JavaScript</span>
                         <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">Firebase</span>
                         <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">MongoDB</span>
+                        <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">Tailwind.css</span>
+                        <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">Bootstrap</span>
                         <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">Responsive Design</span>
                         <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">HTML5</span>
                         <span className="bg-blue-500 text-white px-4 py-2 rounded-full m-2">CSS3</span>
